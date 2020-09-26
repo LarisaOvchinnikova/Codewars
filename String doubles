@@ -1,0 +1,13 @@
+// https://www.codewars.com/kata/5a145ab08ba9148dd6000094/
+
+function doubles(s){
+   let arr = [s[0]]
+    for (let i = 1; i < s.length; i++){
+        if (arr.length === 0 || s[i] != arr[arr.length-1]){
+            arr.push(s[i])
+        } else {
+            arr.pop()
+        }  
+     }
+    return arr.join('')
+}
